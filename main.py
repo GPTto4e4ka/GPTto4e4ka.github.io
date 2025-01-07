@@ -19,10 +19,10 @@ async def get_handler(request: web.Request):  # Страница управле�
     return temp('index.html', request, {})
 
 app.add_routes(routes)  # Инициализируем пути
-app.router.add_static('/css/', path='static/css', name='css')
-app.router.add_static('/img/', path='static/img', name='img')
-app.router.add_static('/js/', path='static/js', name='js')
-app.router.add_static('/fonts/', path='static/fonts', name='fonts', show_index=True)
+app.router.add_static('/css/', path='docs/assets/css', name='css')
+app.router.add_static('/img/', path='docs/assets/img', name='img')
+app.router.add_static('/js/', path='docs/assets/js', name='js')
+app.router.add_static('/fonts/', path='docs/assets/fonts', name='fonts', show_index=True)
 
 
 if __name__ == '__main__':
