@@ -6,7 +6,7 @@ from aiohttp.web import FileResponse
 import asyncio
 
 app = web.Application()  # Инициализируем приложение
-aiohttp_jinja2.setup(app, loader=jinja2.FileSystemLoader('templates'))  # Инициализируем шаблонизатор
+aiohttp_jinja2.setup(app, loader=jinja2.FileSystemLoader(''))  # Инициализируем шаблонизатор
 routes = web.RouteTableDef()
 HOST = 'localhost'
 PORT = 8080
